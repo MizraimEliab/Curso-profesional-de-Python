@@ -10,7 +10,7 @@ Se realizará la instalación de Python en los diferentes sistemas operativos pa
 ### Instalación en Windows
 Para la instalación en Windows primeramente debemos ir a la siguiente dirección en el navegador:
 
-[](https://python.org/downloads/)
+[https://python.org/downloads/]
 
 Dentro del sitio web el siguiente paso es descargar el instalador y posteriormente una ves terminado, ejecutarlo.
 
@@ -46,7 +46,7 @@ Por defecto MacOS ya tiene instalada una versión de Python que puedes verificar
 
 En caso contrario de que no se encuentre instalado aquí la guía de instalación:
 
-[](https://python.org/downloads/)
+[https://python.org/downloads/]
 
 
 ### Instalación en Linux
@@ -57,7 +57,7 @@ Por defecto Linux ya tiene instalada una versión de Python que puedes verificar
 
 En caso contrario de que no se encuentre instalado aquí la guía de instalación:
 
-[](https://python.org/downloads/)
+[https://python.org/downloads/]
 
 
 
