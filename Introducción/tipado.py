@@ -9,3 +9,7 @@ print(valor)
 
 valor = True
 print(valor)
+
+# conocer el tipo de dato que alamcenamos en una variable
+tipo = type(valor)
+print(tipo)
