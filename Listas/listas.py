@@ -15,4 +15,9 @@ print(ultimo_curso)
 tercer_curso = lista_cursos[-3] # 2
 print(tercer_curso)
 
+# actualizando valores de la lista
+lista_cursos[-1] = 'Rust'
+print(lista_cursos)
+
+
 
