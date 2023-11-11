@@ -40,4 +40,45 @@ sub_lista = lista_cursos[1:4:2] # [1, 4, 2]
 print(sub_lista)
 
 
+# Agregar elementos a una lista
+# append -> Agrega un elemento al final de la lista
+# insert -> Agrega un elemento en una posición específica de la lista y recorrerá los demás elementos
+
+lista_cursos.append('Rust')
+lista_cursos.append('Go')
+print(lista_cursos)
+
+print(len(lista_cursos))
+
+
+lista_cursos.insert(0, 'C#')
+print(lista_cursos)
+
+
+# Extender una lista con otra lista
+
+lista_cursos_2 = ['C++', 'C', 'Docker']
+
+lista_cursos.extend(lista_cursos_2)
+print(lista_cursos)
+print(lista_cursos_2)
+
+# Eliminar elementos de una lista
+# pop -> Elimina el último elemento de la lista
+# remove -> Elimina un elemento específico de la lista
+# del -> Elimina un elemento específico de la lista
+
+lista_cursos.remove('C#')
+print(lista_cursos)
+
+del lista_cursos[0]
+print(lista_cursos)
+
+lista_cursos.pop()
+print(lista_cursos)
+
+# Eliminar todos los elementos de una lista
+lista_cursos.clear()
+print(lista_cursos)
+
 
