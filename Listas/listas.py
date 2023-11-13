@@ -99,6 +99,9 @@ print(10 in lista)
 # Conocer si un elemento no se encuentra en una lista
 print(11 not in lista)
 
+# Conocer el índice de un elemento en una lista
+print(lista.index(44))
+
 
 
 
