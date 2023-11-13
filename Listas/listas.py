@@ -81,4 +81,25 @@ print(lista_cursos)
 lista_cursos.clear()
 print(lista_cursos)
 
+# Ordenar una lista
+lista = [8, 90, 1, 5, 44, 132, 600, 3, 4]
+lista.sort()
+print(lista)
+# Ordenar una lista de forma inversa
+lista.sort(reverse=True)
+print(lista)
+
+# Conocer el menor y mayor valor de una lista
+print(min(lista))
+print(max(lista))
+
+# Conocer si un elemento se encuentra en una lista
+print(10 in lista)
+
+# Conocer si un elemento no se encuentra en una lista
+print(11 not in lista)
+
+
+
+
 
