@@ -15,3 +15,10 @@ print(nombre_completo)
 
 nombre_completo = 'Mr. {name} {last_name}.'.format(name=nombre, last_name=apellido)
 print(nombre_completo)
+
+# FStrings
+nombre_completo = f'Mr. {nombre} {apellido}.'
+print(nombre_completo)
+
+nombre_completo = f'Mr. {nombre} {apellido} {'Arch'}.'
+print(nombre_completo)
