@@ -4,30 +4,48 @@
 
 
 ### Introducción
-Después de haber revisado las formas en Python de poder generar nuevos strings a partir de otros strings hemos visto los resultados mediante la consola con la función "print()", sin embargo, siempre le pasamos una variable como argumento, si bien es cierto esto no esta mal es importante saber que podemos omitir la variable y pasarle solo los valores a la función "print()".
+Ahora se revisará la manera de buscar strings dentro de otros strings y para ello existen diferentes formas de hacerlo.
 
 ### Validar sub strings
 
-Si recordamos la función "print()" nos permite imprimir por consola valores, pero es importante saber que no solamente podemos imprimir un solo valor ya que la función nos permite imprimir múltiples valores.
+Una manera de hacer la busqueda es mediante el uso del método "count()" que recibe como parámetro la coincidencia en string que vamos a buscar a partir de un string base, el método nos retorna la cantidad de veces que se encontro la coincidencia del string que pasamos como argumento en nuestro string base.
 
-`nombre = 'Alan Isaac'`
-`apellido = 'Turing'`
-`print(nombre, apellido, 'Arch')`
+`titulo_curso = 'Curso profesional de Python'`
+`contador = titulo_curso.count('Python')`
+`print(contador)`
+`1`
 
-Como se puede observar los valores de la variables y el valor que se indicó están separados por coma dentro de una sola línea que usa la función "print()".
+Con base al ejemplo se puede observar que existe nuestro string que buscabamos 1 sola vez en nuestro string base.
 
-Lo interesante es que imprimirá los valores y los separará usando un espacio.
+Con este método podemos buscar mediante una palabra o frase, y también podemos buscar por caracteres.
 
-La función "print()" se encargará de imprimir por consola todos los valores que le pasemos a la función como argumento, ya sean string, enteros, flotantes, etc.
+Si buscamos con el método "count()" un string que no existe en el string base simplemente nos retornara el valor cero.
 
-`print(nombre, apellido, 'Arch', True)`
+Otra manera de buscar si un string existe dentro de otro es mediante el uso de la palabra reservada "in".
 
-Ahora que conocemos que por defecto la función "print()" separa los valores por un espacio, ¿Qué pasa si queremos que separe los valores por otro caracter?, bueno la respuesta a la pregunta es que podemos hacerlo apoyándonos del parámetro "sep" y el caracter a utilizar para separar los valores.
+`print('Python' in titulo_curso)`
+`True`
 
-`print(nombre, apellido, 'Arch', sep='-')`
+Como se puede ver la palabra reservada "in" nos regresa un boolean dependiendo si el string a buscar se encuentra o no en un string base.
 
-El parámetro "sep" se recomienda utilizarlo al final dentro de la función "print()" después de nuestros valores.
+Si la palabra "Python" la escribiéramos en minúscula "python" con la palabra reservada "in" nos regresaría un False ya que a Python si le importan el uso de mayúsculas y minúsculas.
+
+Para obtener un verdadero podemos estandarizar el string base haciendo que todas las letras se pongan en minúscula con "lower()" o en mayúscula con "upper()".
+
+También es importante que es posible negar con la palabra reservada "not".
+
+`print('alan' not in titulo_curso.lower())`
+
+Existen otros métodos para conocer si nuestro string base comienza o termina por un string en especial.
+
+Esos métodos son "startswith()" y "endswith()" y ambos reciben como argumento el string a buscar como coincidencia basándose en otro string y ambos retornan un valor boolean.
+
+`print(titulo_curso.startswith('Curso'))`
+`print(titulo_curso.startswith('curso'))`
+`print(titulo_curso.endswith('Python'))`
+`print(titulo_curso.endswith('python'))`
+
 
 ### Conclusión 
 
-Es importante mencionar que la función "print()" únicamente va a imprimir en consola, en ningún momento va a generar un nuevo string.
+Como podemos notar existen diferentes métodos con los cuales podemos ir buscando strings dentro de otros strings para hacer diferentes validaciones que nos pueden ayudar a la hora de hacer nuestros desarrollos.
