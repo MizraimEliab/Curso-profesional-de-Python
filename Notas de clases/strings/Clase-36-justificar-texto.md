@@ -2,32 +2,33 @@
 
 ## Notas de clase
 
-
 ### Introducción
-Después de haber revisado las formas en Python de poder generar nuevos strings a partir de otros strings hemos visto los resultados mediante la consola con la función "print()", sin embargo, siempre le pasamos una variable como argumento, si bien es cierto esto no esta mal es importante saber que podemos omitir la variable y pasarle solo los valores a la función "print()".
+Un aspecto interesante en Python es que nosotros podemos alinearlos o justificarlos mediante el uso de métodos.
 
 ### Justificar texto
 
-Si recordamos la función "print()" nos permite imprimir por consola valores, pero es importante saber que no solamente podemos imprimir un solo valor ya que la función nos permite imprimir múltiples valores.
+Para alinear o justificar el texto en Python podemos hacer uso de 3 métodos lo cual se traduce en que tenemos 3 maneras de lograr justificar el texto.
 
-`nombre = 'Alan Isaac'`
-`apellido = 'Turing'`
-`print(nombre, apellido, 'Arch')`
+Los 3 métodos son los siguientes:
+	- ljust -> Alinea el texto a la izquierda
+	- rjust -> Alinea el texto a la derecha
+	- center -> Alinea el texto al centro
 
-Como se puede observar los valores de la variables y el valor que se indicó están separados por coma dentro de una sola línea que usa la función "print()".
+Es importante mencionar que los 3 métodos no modifican al string original, si no que, a partir del string se genera uno nuevo ya que los string en Python son objetos inmutables.
 
-Lo interesante es que imprimirá los valores y los separará usando un espacio.
+Vamos a comenzar a ver el ejemplo de alineación a la izquierda.
 
-La función "print()" se encargará de imprimir por consola todos los valores que le pasemos a la función como argumento, ya sean string, enteros, flotantes, etc.
+`mensaje = mensaje.ljust(20)`
+`print(mensaje, '.')`
 
-`print(nombre, apellido, 'Arch', True)`
+Como se puede observar al método se le pasa un argumento que indica la cantidad de espacios a agregar para justificar el texto.
 
-Ahora que conocemos que por defecto la función "print()" separa los valores por un espacio, ¿Qué pasa si queremos que separe los valores por otro caracter?, bueno la respuesta a la pregunta es que podemos hacerlo apoyándonos del parámetro "sep" y el caracter a utilizar para separar los valores.
+El argumento aplica igual para el método de alineación a la derecha y para alineación al centro.
 
-`print(nombre, apellido, 'Arch', sep='-')`
+`mensaje = mensaje.rjust(20)`
+`mensaje = mensaje.center(20)`
 
-El parámetro "sep" se recomienda utilizarlo al final dentro de la función "print()" después de nuestros valores.
 
 ### Conclusión 
 
-Es importante mencionar que la función "print()" únicamente va a imprimir en consola, en ningún momento va a generar un nuevo string.
+Siempre que se requiera alinear un string para manejo de datos o simplemente acomodo de la información se puede hacer uso de los 3 métodos de alineación que nos proporciona Python.
