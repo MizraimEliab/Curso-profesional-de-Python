@@ -15,7 +15,7 @@ print('PYTHON' in titulo_curso.upper())
 print(titulo_curso.find('Python'))
 print(titulo_curso.find('python'))
 
-# Buscar mediante srartswith() y endswith()
+# Buscar mediante startswith() y endswith()
 print(titulo_curso.startswith('Curso'))
 print(titulo_curso.startswith('curso'))
 print(titulo_curso.endswith('Python'))
