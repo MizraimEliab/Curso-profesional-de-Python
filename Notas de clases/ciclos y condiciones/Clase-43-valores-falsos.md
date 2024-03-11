@@ -12,14 +12,14 @@ El utilizar la palabra reservada False no es la única manera de representar un 
 Esas 8 formas son las siguientes.
 
 ```
->> False
->> None
->> 0
->> 0.0
->> '' / ""
->> []
->> ()
->> {}
+False
+None
+0
+0.0
+'' / ""
+[]
+()
+{}
 ```
 
 Estos 8 valores para Python equivalen a falso y viceversa, todos aquellos valores que no estén en este listado son considerados verdaderos.
