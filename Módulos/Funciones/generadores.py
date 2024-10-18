@@ -8,3 +8,23 @@ def pares(): # Generador -> Lazy iterator
 
 for par in pares():
     print(par)
+
+# Distribución perezosa
+generador = pares()
+print(next(generador))
+
+print(next(generador))
+
+print(next(generador))
+
+print('Ejcutamos código entre un llamado y otro')
+
+print(next(generador))
+
+while True:
+    try:
+        par = next(generador)
+        print(par)
+    except StopIteration:
+        print('El generador finalizo.')
+        break
