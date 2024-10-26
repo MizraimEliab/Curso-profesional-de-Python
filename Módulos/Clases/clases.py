@@ -20,3 +20,23 @@ Usuario.email = 'usuario@email.com'
 
 print(Usuario.username)
 print(Usuario.email)
+
+# Atributos de instancia
+
+# __dict__
+
+class Usuario:
+    # Attrs de clase
+    username = 'Hola mundo soy una clase'
+    email = ''
+
+user1 = Usuario()
+# 	1. Verifica si el atributo existe dentro del objeto.
+#	2. Verifica si el atributo existe dentro de la clase (Solamente funciona para lectura).
+#   3. Lanzar un error.
+print(user1.username)
+
+print(id(user1.username))
+print(id(Usuario.username))
+
+print(user1.__dict__) # Dict
