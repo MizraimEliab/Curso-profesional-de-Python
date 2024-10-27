@@ -3,6 +3,9 @@
 ## Notas de clase
 
 ### Introducción
+
+Los atributos de instancia son aquellos atributos que le pertenecen a un objeto.
+
 En Python nosotros podemos añadir de forma dinámica atributos a nuestro objeto, esto en tiempo de ejecución, para  esto internamente Python trabaja con un meta atributo  que tiene por nombre "__dict__" dentro de este atributo vamos a encontrar todos los atributos que tenga nuestro objeto.
 
 ### Atributos de instancia

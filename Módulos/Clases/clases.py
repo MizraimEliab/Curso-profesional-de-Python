@@ -40,3 +40,14 @@ print(id(user1.username))
 print(id(Usuario.username))
 
 print(user1.__dict__) # Dict
+
+
+# Atributos dinámicos
+
+user1.username = 'Beto'
+user1.password = '1234' # Añadimos el atributo al objeto y se convierte en un atributo de instancia
+print(user1.username)
+print(user1.password)
+
+user1.password = 'password'
+print(user1.password)
