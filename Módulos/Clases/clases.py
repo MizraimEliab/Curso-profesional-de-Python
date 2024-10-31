@@ -70,3 +70,21 @@ user2.inicializar('User2', 'Password2')
 
 print(user1.__dict__)
 print(user2.__dict__)
+
+
+# Método init
+
+class Usuario:
+    # __init__
+    def __init__(self, username='', password=''):
+        print('Se esta crendo un usuario')
+        self.username = username
+        self.password = password
+
+user1 = Usuario('user1', 'pass1')
+user2 = Usuario('user2', 'pass2')
+user3 = Usuario()
+
+print(user1.__dict__)
+print(user2.__dict__)
+print(user3.__dict__)
